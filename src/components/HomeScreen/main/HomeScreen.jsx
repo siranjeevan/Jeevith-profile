@@ -10,6 +10,8 @@ import TypingResultCard from "../Typing";
 import Github from "../Github"
 import LogoLoop from "../LogoLoopLayout";
 import SpotifyCard from "../SpotifyCard";
+import { FaGithub, FaLinkedin, FaDiscord, FaEnvelope } from 'react-icons/fa';
+import { SiX } from 'react-icons/si';
 
 export default function HomeScreen() {
   const items = [
@@ -33,6 +35,22 @@ export default function HomeScreen() {
         
         <div>
           <img src={Jeevith} className="h-150 absolute top-44.5 -translate-x-1/2"/>
+        </div>
+        
+        <div className="flex flex-row gap-6 absolute right-16 top-1/2 -translate-y-1/2">
+          <a href="https://github.com/siranjeevan" className="w-12 h-12 bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center text-[black] hover:text-white hover:bg-[#baa794]/20 transition-all duration-300 hover:scale-110">
+            <FaGithub size={24} />
+          </a>
+          <a href="https://linkedin.com/in/siranjeevan" className="w-12 h-12 bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center text-[black] hover:text-white hover:bg-[#0077b5]/20 transition-all duration-300 hover:scale-110">
+            <FaLinkedin size={
+              24} />
+          </a>
+          <a href="https://x.com/siranjeevan" className="w-12 h-12 bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center text-[black] hover:text-white hover:bg-white/20 transition-all duration-300 hover:scale-110">
+            <SiX size={20} />
+          </a>
+          <a href="mailto:siranjeevan@example.com" className="w-12 h-12 bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center text-[black] hover:text-white hover:bg-red-500/20 transition-all duration-300 hover:scale-110">
+            <FaEnvelope size={20} />
+          </a>
         </div>
       </div>
 
