@@ -13,7 +13,7 @@ function colorFor(count, max) {
   return colors[index];
 }
 
-export default function App() {
+export default function Github() {
   const [weeks, setWeeks] = useState([]);
   const [maxCount, setMaxCount] = useState(0);
   const [loading, setLoading] = useState(false);

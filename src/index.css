@@ -1,5 +1,22 @@
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Global styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #FFFFFF; <-- WHITE BACKGROUND */
+  overflow-x: hidden; /* Horizontal scroll avoid pannanum */
+}
+
 html, body {
   cursor: none;
 }
@@ -142,6 +159,58 @@ html, body {
 
 .animate-plasma-flow {
   animation: plasma-flow 12s ease-in-out infinite;
+}
+
+/* New attractive animations for project cards */
+@keyframes sparkle {
+  0% { transform: scale(0) rotate(0deg); opacity: 0; }
+  50% { transform: scale(1) rotate(180deg); opacity: 1; }
+  100% { transform: scale(0) rotate(360deg); opacity: 0; }
+}
+
+@keyframes float-bubble {
+  0% { transform: translateY(100px) scale(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-100px) scale(1.2); opacity: 0; }
+}
+
+@keyframes pulse-glow {
+  0% { transform: scale(1); box-shadow: 0 0 5px currentColor; }
+  50% { transform: scale(1.5); box-shadow: 0 0 20px currentColor; }
+  100% { transform: scale(1); box-shadow: 0 0 5px currentColor; }
+}
+
+@keyframes wave-ripple {
+  0% { transform: scale(0) rotate(0deg); opacity: 1; }
+  100% { transform: scale(4) rotate(360deg); opacity: 0; }
+}
+
+@keyframes shooting-star {
+  0% { transform: translateX(-100px) translateY(100px) rotate(45deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateX(300px) translateY(-100px) rotate(45deg); opacity: 0; }
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.animate-float-bubble {
+  animation: float-bubble 4s ease-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-wave-ripple {
+  animation: wave-ripple 2s ease-out infinite;
+}
+
+.animate-shooting-star {
+  animation: shooting-star 3s linear infinite;
 }
 
 /* Enhanced animations for #baa794 color theme */

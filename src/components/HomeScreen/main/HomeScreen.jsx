@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import Jeevith from "../../../assets/Jeevith2.png"
 import Portfolio from "../../../assets/portfolio1.png"
 import TargetCursor from "../../Animations/TargetCursor/TargetCursor";
@@ -14,10 +15,12 @@ import { FaGithub, FaLinkedin, FaDiscord, FaEnvelope } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 
 export default function HomeScreen() {
+  const navigate = useNavigate();
+  
   const items = [
-    { icon: <VscHome size={18} color="white" />, label: 'Home', onClick: () => alert('Home!') },
-    { icon: <VscArchive size={18} color="white"/>, label: 'Archive', onClick: () => alert('Archive!') },
-    { icon: <VscAccount size={18} color="white" />, label: 'Profile', onClick: () => alert('Profile!') },
+    { icon: <VscHome size={18} color="white" />, label: 'Home', onClick: () => navigate('/') },
+    { icon: <VscArchive size={18} color="white"/>, label: 'Projects', onClick: () => navigate('/projects') },
+    { icon: <VscAccount size={18} color="white" />, label: 'Mentor', onClick: () => navigate('Mentor') },
     { icon: <VscSettingsGear size={18} color="white" />, label: 'Settings', onClick: () => alert('Settings!') },
   ];
   return (
