@@ -10,7 +10,7 @@ export default function SocialMedia() {
   ];
 
   return (
-    <div className="flex flex-col gap-4 absolute right-20 top-1/2 -translate-y-1/2">
+    <div className="flex lg:flex-col md:flex-col flex-row gap-4 absolute lg:right-20 md:right-12 sm:right-6 right-4 lg:top-1/2 md:top-1/2 sm:top-4 top-4 lg:-translate-y-1/2 md:-translate-y-1/2">
       {socialLinks.map((social, index) => (
         <a
           key={index}

@@ -85,7 +85,7 @@ const MentorPage = () => {
       <motion.section
         ref={ref}
         id="mentors"
-        className="relative py-20 px-5 sm:px-10 lg:px-20 bg-white/60 min-h-screen flex flex-col justify-center"
+        className="relative py-20 px-5 sm:px-10 lg:px-20 bg-gradient-to-br from-[#baa794]/10 via-[#8b7355]/5 to-[#6d5a42]/10 backdrop-blur-sm min-h-screen flex flex-col justify-center"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -93,7 +93,7 @@ const MentorPage = () => {
         <div className="max-w-7xl mx-auto">
           {/* Animated Title - Word by Word */}
           <motion.h2
-            className="text-5xl sm:text-7xl font-extrabold text-center text-gray-900 mb-6"
+            className="text-5xl sm:text-7xl font-extrabold text-center bg-gradient-to-r from-[#baa794] via-[#8b7355] to-[#6d5a42] bg-clip-text text-transparent mb-6"
             variants={titleVariants}
           >
             {titleWords.map((word, index) => (
@@ -104,7 +104,7 @@ const MentorPage = () => {
           </motion.h2>
 
           <motion.p
-            className="text-center text-gray-700 mb-20 max-w-3xl mx-auto text-lg"
+            className="text-center text-[#6d5a42] mb-20 max-w-3xl mx-auto text-lg font-medium"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.5, duration: 0.6 }}

@@ -72,22 +72,21 @@ styleSheet.type = "text/css";
 styleSheet.innerText = `
   .spotify-card {
     width: 100%;
-    max-width: 320px;
-    min-width: 280px;
+    height: 256px;
     background: linear-gradient(145deg, rgba(26, 22, 18, 0.9), rgba(186, 167, 148, 0.9)), url(${BelieverImage});
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
+    border-radius: 16px;
     padding: 20px;
     color: #fff;
     font-family: Inter, sans-serif;
-    box-shadow: 0 8px 25px rgba(0,0,0,.6);
-    animation: cardFloat 0.8s ease-in, cardPulse 3s ease-in-out infinite;
+    box-shadow: 0 4px 20px rgba(0,0,0,.3);
+    animation: cardFloat 0.8s ease-in;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 0 auto;
+    backdrop-filter: blur(8px);
   }
 
   .spotify-card:hover {

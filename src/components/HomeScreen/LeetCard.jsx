@@ -2,7 +2,7 @@ import React from "react";
 
 const LeetCard = () => {
   return (
-    <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-110 hover:rotate-2 transition-all duration-500 group" style={{ height: "250px", width: "30%" }}>
+    <div className="relative rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-all duration-300 group w-full h-64 bg-gradient-to-br from-[#8B7355]/90 to-[#dac4ae]/90 backdrop-blur-sm">
       {/* Multi-layer Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 animate-pulse" style={{background: 'linear-gradient(135deg, #8B7355 0%, #dac4ae 50%, #8B7355 100%)'}}></div>

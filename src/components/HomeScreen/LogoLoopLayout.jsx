@@ -12,7 +12,7 @@ export default function Layout(){
     <SiTailwindcss className="text-5xl text-white filter drop-shadow-lg hover:scale-125 transition-transform duration-300" />
   ];
     return(
-        <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 hover:rotate-1 transition-all duration-500 group w-160 h-74">
+        <div className="relative rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-all duration-300 group w-full h-64 bg-gradient-to-br from-[#8B7355]/90 to-[#baa794]/90 backdrop-blur-sm">
           {/* Multi-layer Animated Background */}
           <div className="absolute inset-0">
             <div className="absolute inset-0 animate-pulse" style={{background: 'linear-gradient(135deg, #8B7355 0%, #baa794 50%, #8B7355 100%)'}}></div>

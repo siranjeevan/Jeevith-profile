@@ -6,35 +6,35 @@ const MentorBackground = () => {
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
       {/* Gradient background with purple/green theme */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white via-purple-500/10 to-green-600/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-[#baa794]/10 to-[#8b7355]/20"></div>
       
-      {/* Different animated particles with purple/green color scheme */}
-      {[...Array(15)].map((_, i) => (
+      {/* Different animated particles with brown color scheme */}
+      {[...Array(12)].map((_, i) => (
         <div
           key={i}
-          className={`absolute opacity-70 ${
-            i % 5 === 0 ? 'animate-sparkle' :
-            i % 5 === 1 ? 'animate-float-bubble rounded-full' :
-            i % 5 === 2 ? 'animate-pulse-glow rounded-full' :
-            i % 5 === 3 ? 'animate-wave-ripple rounded-full' : 'animate-shooting-star'
+          className={`absolute opacity-40 ${
+            i % 6 === 0 ? 'animate-diagonal rounded-full' :
+            i % 6 === 1 ? 'animate-bounce-rotate rounded-full' :
+            i % 6 === 2 ? 'animate-figure8 rounded-full' :
+            i % 6 === 3 ? 'animate-wave rounded-full' :
+            i % 6 === 4 ? 'animate-orbit rounded-full' : 'animate-plasma-flow rounded-full'
           }`}
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
-            width: i % 5 === 0 ? '8px' : `${Math.random() * 25 + 15}px`,
-            height: i % 5 === 0 ? '8px' : `${Math.random() * 25 + 15}px`,
-            backgroundColor: ['#8b5cf6', '#10b981', '#06d6a0', '#7c3aed', '#059669'][i % 5],
-            clipPath: i % 5 === 0 ? 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)' : 'none',
-            animationDelay: `${Math.random() * 8}s`,
-            animationDuration: `${Math.random() * 6 + 4}s`
+            width: `${Math.random() * 20 + 10}px`,
+            height: `${Math.random() * 20 + 10}px`,
+            backgroundColor: ['#baa794', '#8b7355', '#6d5a42', '#9c8a7a', '#a69688', '#7a6b58'][i % 6],
+            animationDelay: `${Math.random() * 12}s`,
+            animationDuration: `${Math.random() * 10 + 8}s`
           }}
         />
       ))}
       
       {/* Large moving elements with purple/green gradient combinations */}
-      <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-gradient-to-r from-purple-500/40 to-green-600/50 animate-pulse-glow"></div>
-      <div className="absolute top-3/4 right-1/4 w-28 h-28 rounded-full bg-gradient-to-r from-green-600/45 to-purple-500/40 animate-float-bubble" style={{animationDelay: '3s'}}></div>
-      <div className="absolute top-1/2 left-1/6 w-24 h-24 rounded-full bg-gradient-to-br from-purple-600/50 to-green-700/45 animate-wave-ripple" style={{animationDelay: '6s'}}></div>
+      <div className="absolute top-1/4 left-1/4 w-40 h-40 rounded-full bg-gradient-to-r from-[#baa794]/20 to-[#8b7355]/30 animate-diagonal"></div>
+      <div className="absolute top-3/4 right-1/4 w-32 h-32 rounded-full bg-gradient-to-r from-[#6d5a42]/25 to-[#baa794]/20 animate-figure8" style={{animationDelay: '4s'}}></div>
+      <div className="absolute top-1/2 left-1/6 w-28 h-28 rounded-full bg-gradient-to-br from-[#9c8a7a]/30 to-[#7a6b58]/25 animate-plasma-flow" style={{animationDelay: '7s'}}></div>
       
       {/* Geometric shapes with enhanced animations */}
       <div className="absolute top-1/2 left-1/2 animate-cyber-pulse" style={{animationDelay: '2s'}}>

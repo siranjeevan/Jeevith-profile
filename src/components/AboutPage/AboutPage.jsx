@@ -8,6 +8,7 @@ import AboutBackground from '../AnimatedBackground/AboutBackground';
 import Dock from '../Animations/Dock/Dock';
 import TargetCursor from '../Animations/TargetCursor/TargetCursor';
 import { VscHome, VscArchive, VscAccount, VscSettingsGear } from 'react-icons/vsc';
+import Jeevith from "../../assets/Jeevith3.jpg"
 
 const AboutPage = () => {
   const navigate = useNavigate();
@@ -49,7 +50,7 @@ const AboutPage = () => {
                 animate={isHeroInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#baa794] via-[#8b7355] to-[#6d5a42] bg-clip-text text-transparent">
                   Creative
                 </span>
                 <br />
@@ -72,10 +73,10 @@ const AboutPage = () => {
                 animate={isHeroInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <button className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white font-semibold rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                <button className="px-8 py-4 bg-gradient-to-r from-[#baa794] to-[#8b7355] text-white font-semibold rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300">
                   View My Work
                 </button>
-                <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-full hover:border-orange-500 hover:text-orange-500 transition-all duration-300">
+                <button className="px-8 py-4 border-2 border-[#baa794]/30 text-[#baa794] font-semibold rounded-full hover:border-[#baa794] hover:text-[#8b7355] transition-all duration-300">
                   Get In Touch
                 </button>
               </motion.div>
@@ -88,9 +89,9 @@ const AboutPage = () => {
               className="relative"
             >
               <div className="relative w-full max-w-md mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-pink-400 rounded-3xl blur-2xl opacity-30 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#baa794] to-[#8b7355] rounded-3xl blur-2xl opacity-30 animate-pulse"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src={Jeevith}
                   alt="Profile"
                   className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
                 />
@@ -124,12 +125,12 @@ const AboutPage = () => {
                 animate={isSkillsInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 1, delay: 0.2 }}
               >
-                <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#6366f1] via-[#8b5cf6] to-[#a855f7] bg-clip-text text-transparent">
                   My Arsenal
                 </span>
               </motion.h2>
               <motion.div 
-                className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6 rounded-full"
+                className="w-24 h-1 bg-gradient-to-r from-[#6366f1] to-[#8b5cf6] mx-auto mb-6 rounded-full"
                 initial={{ width: 0 }}
                 animate={isSkillsInView ? { width: 96 } : {}}
                 transition={{ duration: 1, delay: 0.5 }}
@@ -264,10 +265,10 @@ const AboutPage = () => {
               animate={isStoryInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-6xl font-black mb-6 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+              <h2 className="text-6xl font-black mb-6 bg-gradient-to-r from-[#6366f1] via-[#8b5cf6] to-[#a855f7] bg-clip-text text-transparent">
                 Code Journey
               </h2>
-              <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto rounded-full"></div>
+              <div className="w-32 h-1 bg-gradient-to-r from-[#6366f1] to-[#8b5cf6] mx-auto rounded-full"></div>
             </motion.div>
             
             {/* Compact Modern Card Layout */}

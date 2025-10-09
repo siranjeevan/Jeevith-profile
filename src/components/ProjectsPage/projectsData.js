@@ -1,32 +1,64 @@
 // src/components/ProjectsPage/projectsData.js
+import Newton from "../../assets/Newton.jpg"
+import Connect4 from "../../assets/Connect4.jpg"
+import DataBase from "../../assets/DataBase.png"
+import QuizGame from "../../assets/QuizGame.png"
+import Html from "../../assets/Html.png"
+import Saree from "../../assets/Saree.png"
 
 export const projectsData = [
   {
     id: 1,
-    title: "Modern E-Commerce Site",
-    description: "React, Node.js, and Stripe use panni oru full-stack e-commerce platform. Payment integration, user auth ellam irukku.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80", // Use a real image
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveLink: "https://your-live-link.com",
-    githubLink: "https://github.com/your-username/your-repo",
+    title: "Physics App",
+    description: "An iOS learning app built with Swift and SwiftUI. It uses Swift animations and motion effects to visualize real-time physics concepts with a clean, interactive UI.",
+    image: Newton, // Use a real image or local asset like: require('../assets/newton.png')
+    tech: ["Swift", "SwiftUI", "Xcode", "Swift Animation"],
+    liveLink: "", // optional (TestFlight or App Store)
+    githubLink: "https://github.com/your-username/physics-app"
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "Drag and drop feature, real-time updates, and team collaboration. React and Firebase use panni senjen.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80",
-    tech: ["React", "Firebase", "Tailwind CSS"],
-    liveLink: "https://your-live-link.com",
-    githubLink: "https://github.com/your-username/your-repo",
+    title: "Connect Three Game",
+    description: "An iOS game built with Swift and SwiftUI. Features drag-and-drop moves, smooth animations, and instant win detection.",
+    image: Connect4, // Use your actual image or local asset like: require('../assets/connect3.png')
+    tech: ["Swift", "SwiftUI", "Xcode"],
+    liveLink: "https://your-live-link.com", // optional (App Store or TestFlight)
+    githubLink: "https://github.com/your-username/connect-three-game"
   },
   {
     id: 3,
-    title: "AI Content Generator",
-    description: "OpenAI API integrate panni oru content generation tool. Users can generate blog posts, social media captions.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-    tech: ["Next.js", "OpenAI API", "TypeScript"],
-    liveLink: "https://your-live-link.com",
-    githubLink: "https://github.com/your-username/your-repo",
+    title: "Travel Rental Database System",
+    description: "A MySQL-based project to manage travel rentals and user bookings. Includes payment tracking and efficient data handling.",
+    image: DataBase, // Use a real image or local asset like: require('../assets/database.png')
+    tech: ["MySQL"],
+    liveLink: "https://your-live-link.com", // optional, if you have a demo
+    githubLink: "https://github.com/your-username/travel-rental-db"
   },
-  // Innum projects add pannalam
+  {   
+    id: 4,
+    title: "Quiz Game",
+    description: "A React-based quiz game with dynamic questions and real-time score updates. Styled using Tailwind CSS for a clean UI.",
+    image: QuizGame, // Use a real image or local asset like: require('../assets/quizgame.png')
+    tech: ["React", "Tailwind CSS", "JavaScript"],
+    liveLink: "https://siranjeevan.github.io/quizGame/",
+    githubLink: "https://github.com/siranjeevan/quizGame"
+  },
+  {
+    id: 5,
+    title: "My Portfolio Website",
+    description: "My first personal portfolio built using HTML, CSS, and JavaScript. Showcases my projects and web development skills.",
+    image: Html, // Use a real image or local asset like: require('../assets/portfolio.png')
+    tech: ["HTML", "CSS", "JavaScript"],
+    liveLink: "https://siranjeevan.github.io/PROJECT_HTML/",
+    githubLink: "https://github.com/siranjeevan/PROJECT_HTML"
+  },
+  {
+    id: 6,
+    title: "Saree Shopping App",
+    description: "A modern e-commerce web app for saree collections built with React. Features smooth Tailwind CSS and motion animations for an interactive experience.",
+    image: Saree, // Use a real image or local asset like: require('../assets/sareeapp.png')
+    tech: ["React", "Tailwind CSS", " Motion", "JavaScript"],
+    liveLink: "https://siranjeevan.github.io/saree/", // update if you have a new live link
+    githubLink: "https://github.com/siranjeevan/saree"
+  },
 ];

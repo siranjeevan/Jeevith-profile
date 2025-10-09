@@ -141,13 +141,15 @@ export default function Github() {
 const styles = {
   container: {
     padding: "24px",
-    background: "linear-gradient(145deg, #1a1612, #baa794)",
-    borderRadius: "20px",
-    boxShadow: "0 8px 25px rgba(0,0,0,.6)",
+    background: "linear-gradient(145deg, rgba(26, 22, 18, 0.9), rgba(186, 167, 148, 0.9))",
+    borderRadius: "16px",
+    boxShadow: "0 4px 20px rgba(0,0,0,.3)",
     color: "#fff",
-    width: "600px",
+    width: "100%",
+    height: "256px",
     fontFamily: "Inter, sans-serif",
     animation: "fadeIn 0.8s ease-in",
+    backdropFilter: "blur(8px)",
   },
   heading: {
     margin: "0 0 16px 0",

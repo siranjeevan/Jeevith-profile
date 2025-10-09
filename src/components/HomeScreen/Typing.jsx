@@ -1,6 +1,6 @@
 export default function TypingResultCard({ wpm, time, accuracy, lang }) {
   return (
-    <div className="relative bg-gradient-to-br from-[#baa794] via-[#8b7355] to-[#6d5a42] rounded-2xl h-62.5 p-6 w-100 overflow-hidden shadow-2xl">
+    <div className="relative bg-gradient-to-br from-[#baa794]/90 via-[#8b7355]/90 to-[#6d5a42]/90 rounded-2xl h-64 p-6 w-full overflow-hidden shadow-xl backdrop-blur-sm">
       {/* Animated background layers */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#baa794]/30 to-[#8b7355]/30 animate-pulse"></div>
       <div className="absolute inset-0 bg-gradient-to-l from-[#6d5a42]/20 to-transparent animate-cyber-pulse"></div>
